@@ -438,7 +438,7 @@ export default function PipelinePage() {
                     if (!pipelineValue || !row.id) return;
 
                     const filename = `${CSV_ENTITY_BY_PIPELINE[pipelineValue]}_${row.id}.csv`;
-                    const url = `/api/files/${pipelineValue}/${row.id}`;
+                    const url = `/files/${pipelineValue}/${row.id}`;
 
                     const a = document.createElement('a');
                     a.href = url;

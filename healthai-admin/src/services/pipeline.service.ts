@@ -50,7 +50,7 @@ export function downloadEtlCsv(pipeline: string, executionId: string) {
         exercises: 'exercise',
     };
     const filename = `${entityByPipeline[pipeline] || pipeline}_${executionId}.csv`;
-    const url = `/api/files/${pipeline}/${executionId}`;
+    const url = `/files/${pipeline}/${executionId}`;
 
     const a = document.createElement('a');
     a.href = url;
